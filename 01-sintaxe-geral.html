@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxe Geral do JS</title>
+</head>
+<body>
+    <h1>Começando com JavaScript</h1>
+    <hr>
+    
+    <script>
+        // CTRL + ; (comentário de linha única) 
+        /* SHIFT + ALT + A (comentário de múltiplas linhas)   */
+
+        // Comando de saída (útil para testes básicos)
+        console.log("Hello World!");
+
+        /* Manipulação de dados na MEMÓRIA
+
+        Criação de espaços na memoria RAM do computador através de variáveis e/ou CONSTANTES.
+        
+        Variável: declaradas com a palavra-chave let. (var - usado antigamente) 
+        Constante: declaradas com a palavra-chave const.
+        */
+
+        // Declaração (criando na memória)
+        let ano = 2024;
+        const aluno = "Lucas";
+
+        // Saída (acessando/exibindo/usando no console)
+        console.log(ano);
+        console.log(aluno);
+
+        /* Declarando lista de variáveis: Elas iniciam sem valor atribuído, portanto, são consideradas indefinidas (undefined). */
+        let teste1, teste2, teste3;
+        console.log(teste1);
+
+
+
+        /* Atribuindo valores às variáveis */
+        teste1 = "Exemplo 1";
+
+        console.log(teste1);
+        
+
+
+        /* Trabalhando com valores numéricos */
+        let valor1 = 10; //inteiro
+        let valor2 = 5; // inteiro
+        let valor3 = 1200.55; // decimal, "quebrado"
+
+        // Operações básicas
+        let soma = valor1 + valor2;
+        let subtracao = valor1 - valor2;
+        let multiplicacao = valor1 * valor2;
+        let divisao = valor2 / valor3;
+
+        console.log("Soma: "+soma);
+        console.log("Subtração:"+subtracao);
+        console.log("Multiplicação: "+multiplicacao);
+        console.log("Divisão: "+divisao);
+        
+        
+        /* Exemplo de uso da função matemática */
+        let resultado = Math.sqrt(soma);
+        console.log(resultado);
+
+
+        /* Saída de dados personalizada 
+        Frase para o exemplo: 
+        Olá! Me chamo Lucas e não vejo a hora de acabar o ano de 2024.*/
+
+        // Forma 1: CONCACTENAÇÂO (Tradicional, antiga)
+        console.log("Olá! Me chamo "+aluno+" e não vejo a hora de acabar o ano de "+ano+".");
+        
+
+        // Forma 2: TEMPLATE LITERAL/STRING (moderna)
+        console.log(`Olá! me chamo ${aluno} e não vejo a hora de acabar o ano de ${ano}.`);
+        
+
+
+
+
+
+
+        
+    </script>
+
+</body>
+</html>
