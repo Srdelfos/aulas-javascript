@@ -4,7 +4,7 @@ Introdução ao JavaScript para uso básico.
 
 ## Sobre a linguagem 
 
-- JavaScript **Não É** Java!
+- JavaScript **NÃO É** Java!
 - JavaScript = JS = EcmaScript
 - É uma linguagem voltada principalmente para o Front-End
 - Mas também pode ser usada no Back-End através de plataformas como o node.js por exemplo
@@ -39,3 +39,11 @@ Arrays são estruturas de dados **indexados**, também conhecidos como **vetores
 Na prática, um array é uma lista de dados sequenciais, e cada dado é armazenado em uma posição/índice do array. 
 
 **Obs.:** a contagem de elementos do array, **sempre inicia em zero**.
+
+---
+
+## Sobre Objetos 
+
+Objetos também são estruturas de dados só que **não-indexados**, ou seja, o acesso aos dados é feita de forma diferente das que vimos nos arrays. No objeto, acessamos através de **propriedades** e **valores** declarados dentro do objeto.
+
+Normalmente, o objeto é programado de acordo com algum contexto relacionado ao mundo real. 
