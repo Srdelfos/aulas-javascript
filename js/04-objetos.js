@@ -19,7 +19,7 @@ console.log(
 const livro = {
     titulo: "Duna",
     autor: "Frank Herbert",
-    volumes: [
+    volumes: [ // Array indexado
         "Duna", "O Messias de Duna", "Os Filhos de Duna", "O Imperador-Deus de Duna", "Os Hereges de Duna", "As Herdeiras de Duna", "Os Caçadores de Duna", "OS Vermes de Duna"
     ]
 }

@@ -1,5 +1,3 @@
-// Array também é conhecido como vetor. 
-
 console.log("Arrays!");
 
 // Declarando um array
