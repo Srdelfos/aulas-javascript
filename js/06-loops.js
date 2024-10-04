@@ -109,6 +109,6 @@ const clientes = [
 ]
 
 for(const cliente of clientes){
-    console.log(clientes);
+    console.log(cliente);
 }
 
