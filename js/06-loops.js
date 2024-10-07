@@ -112,8 +112,11 @@ for(const cliente of clientes){
     console.log(`-Cliente: ${cliente.nome}, id: ${cliente.id}`);
 }
 
-// Correção
 console.log("\n--- ");
+
+
+
+// Correção
 let teste1 = [
     {
         nomes: "Jimin do BTS",
