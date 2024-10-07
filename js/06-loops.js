@@ -109,6 +109,28 @@ const clientes = [
 ]
 
 for(const cliente of clientes){
-    console.log(cliente);
+    console.log(`-Cliente: ${cliente.nome}, id: ${cliente.id}`);
 }
 
+// Correção
+console.log("\n--- ");
+let teste1 = [
+    {
+        nomes: "Jimin do BTS",
+        identificador: 1
+    },
+    {
+        nomes: "Jungkook do BTS",
+        identificador: 2
+        
+    },
+    {
+        nomes: "Taehyung do BTS",
+        identificador: 3
+    }
+]
+
+for (let teste of teste1){
+    console.log(`-Cliente: ${teste.nomes}, id: ${teste.identificador}`);
+    
+}
