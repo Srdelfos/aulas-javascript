@@ -38,8 +38,63 @@ for (const link of links) {
 
 /* Manipulando Eventos */
 const ex1 = document.querySelector("#exemplo01");
-const msg = document.querySelector("#mensagem");
 
+/* Poderiamos tamtém usar a função getelementByid em vez do querySelector. A diferença é que ela só funciona para seleção através do ID. Obs.: ao usá-la NÂO COLOQUE #.   
+const ex1 = document.getElementById("exemplo01");*/
+
+const msg = document.querySelector("#mensagem");
+const pagina = document.querySelector("body");
+
+/* Função Ouvinte de Evento (Event Listener) - aplicando ao elemento ALVO do evento desejado("click") e uma função para executar as ações a partir do evento. Obs.: esta função é considerada do tipo "anônima" e é conhecida como "callback". */
 ex1.addEventListener("click", function(){
+    /* Acessamos o parágrafo vazio e colocamos um conteúdo dentro dele*/
     msg.innerHTML = "Olá 😘!";
+
+    /* Modificar a página alterando a fonte (CSS via JS) */
+    pagina.style.fontFamily = "Verdana";
 })
+
+/* Ouvinte de evento para voltar ao normal (sem texto no parágrafo e com fonte padrão na página). O evento ocorrerá ao clicar DUAS VEZES no parágrafo da mensagem */
+msg.addEventListener("dblclick", function(){
+    msg.innerHTML = ""; // Remove o conteúdo do parágrafo
+    pagina.style.fontFamily = "initial"; // Voltando para fonte padrão
+});
+
+ /* Exemplo 02: modo noturno*/
+ const botaoAtivar = document.querySelector("#ativar");
+ botaoAtivar.addEventListener("click", function(){
+    /* Usamos o toggle do classList para alternar a aplicação/remoção da classe "noturno". Na prática, vira um liga/desliga. */
+    pagina.classList.toggle("noturno");
+    pagina.style.transition = '.4s'
+
+ /* DESAFIO: Trocar o texto do botão.
+ Se a página estiver com a classe "noturno" aplicada, o botão deve mostrar a palavra "Desativar". Caso contrário, deve mostrar a palavra "Ativar". Use if/else! */
+
+//  if (pagina.classList == "noturno"){
+//     botaoAtivar.innerHTML = "Desativar"
+//  } else {
+//     botaoAtivar.innerHTML = "Ativar"
+//  }
+
+ if (pagina.classList.contains("noturno")){
+    botaoAtivar.innerHTML = "Desativar"
+ } else {
+    botaoAtivar.innerHTML = "Ativar"
+ }
+ });
+
+ /* Sobre o duplo e o triplo valor de igual */
+
+ let a = "10";
+ let b = 10;
+ let resultado = a === b;
+ console.log(resultado);
+
+ // == Compara VALORES
+ // === Compara VALORES E TIPO DE DADO
+ 
+
+
+
+
+
